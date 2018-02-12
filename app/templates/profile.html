@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block main %}
+        <div class= "contain">
+            <div id= "head">
+                <div id= "img">
+                   <img src= "{{url_for('static', filename = 'pic.png') }}"/>
+                </div>
+                
+                <div id= "allyinfo">
+                    <p><h1> Allison Davis </h1></p>
+                    <p> @ally_son </p>
+                    <p> Kingston, Jamaica </p>
+                    <p> {{formatted_date}} </p>  
+                </div>
+            </div>
+        </div>   
+            <div id= "middle">
+                <p id='shortbib'> I am a energetic an focused indivdual who has a passion for computers and really loves children  </p>
+                <div id= "fol">
+                    <div class= abs>
+                        <ul style ="list-style-type:none">
+                            
+                            <li class= 'val'>
+                                <span id='val0' style= 'font-weight:bold'>7</span>
+                                <span id='val1' style= 'font-weight:bold'>100</span>
+                                <span id='val2' style= 'font-weight:bold'>150</span>
+                            </li>
+                           
+                            <li class= "value">
+                                <span id= "va0" style= 'color:grey'>Post</span>
+                                <span id= "va1" style= 'color:grey'>Following</span>
+                                <span id= "va2" style= 'color:grey'>Followers</span>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <button id="followbut"> follow </button>
+                </div>
+                
+            </div>
+        
+
+
+{% endblock %}
